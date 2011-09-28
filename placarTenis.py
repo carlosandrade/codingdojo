@@ -7,6 +7,14 @@ class Placar:
     def __init__(self,jogador1,jogador2):
         self.jogador1 = jogador1
         self.jogador2=jogador2
+        self.pontos = {self.jogador1:0, self.jogador2:0}
+        
     def getplacar(self):
-        return "0x0"
+        return str(self.pontos[self.jogador1]) + 'x' + str(self.pontos[self.jogador2])
+        
+    def pontuar(self,jogador):
+        if self.pontos[jogador] == 0:
+            self.pontos[jogador] = 15
+        
+    
        
