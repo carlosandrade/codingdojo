@@ -12,7 +12,11 @@ class PlacarTenisTest(unittest.TestCase):
         self.assertEquals(self.placar.jogador1,"jogad1")
         self.assertEquals(self.placar.jogador2,"jogad2")
         
-    def testeSejo
+    def testeSejogadorPontuou(self):
+        self.placar.pontuar('jogad1')
+        self.assertEquals(self.placar.getplacar(),"15x0")
+        self.placar.pontuar('jogad2')
+        self.assertEquals(self.placar.getplacar(),"15x15")
             
     
 if __name__ == '__main__':
