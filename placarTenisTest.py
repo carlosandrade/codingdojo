@@ -34,7 +34,7 @@ class PlacarTenisTest(unittest.TestCase):
         self.placar.pontuar('jogad2')
         self.assertEquals(self.placar.getplacar(),"40x30")
         
-    def testeVantagemJogador1(self):
+    def testeQuarentaIguais(self):
         self.setUp()
         self.placar.pontuar('jogad1')
         self.placar.pontuar('jogad1')
@@ -43,7 +43,7 @@ class PlacarTenisTest(unittest.TestCase):
         self.placar.pontuar('jogad2')
         self.placar.pontuar('jogad2')
         self.placar.pontuar('jogad1')
-        self.assertEquals(self.placar.getplacar(),"vantagem do jogad1")
+        self.assertEquals(self.placar.getplacar(),"quarenta iguais")
     
 if __name__ == '__main__':
     unittest.main()
