@@ -1,0 +1,1 @@
+Projeto para guardar codigo dos coding dojos realizados na disciplina mata56-paradigmas de linguagem de programacao.
