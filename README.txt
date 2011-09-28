@@ -32,3 +32,5 @@ tdd nao parece produtivo
 nao comentaram sobre o bar review, pratica agil comum em dojos
 faltou experiencia da turma
 pouco tempo para aprender algo novo
+
+Outros detalhes na wiki destre projeto (fotos, slides usados, etc)
