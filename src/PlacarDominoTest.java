@@ -35,6 +35,14 @@ public class PlacarDominoTest {
 		
 		assertEquals("pX0", placar.mostraPlacar());
 		
+	}
+	
+	public void test3x3(){
+		placar.batidaSimples(1);
+		placar.batidaSimples(2);
+		
+		assertEquals("3x3", placar.mostraPlacar());
+	
 		
 	}
 
