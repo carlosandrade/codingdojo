@@ -15,6 +15,9 @@ class Placar:
     def pontuar(self,jogador):
         if self.pontos[jogador] == 0:
             self.pontos[jogador] = 15
+        elif self.pontos[jogador] == 15:
+            self.pontos[jogador] = 30
+            
         
     
        

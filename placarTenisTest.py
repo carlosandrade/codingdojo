@@ -17,7 +17,13 @@ class PlacarTenisTest(unittest.TestCase):
         self.assertEquals(self.placar.getplacar(),"15x0")
         self.placar.pontuar('jogad2')
         self.assertEquals(self.placar.getplacar(),"15x15")
-            
+
+    def teste30X15(self):
+        self.setUp()
+        self.placar.pontuar('jogad1')
+        self.placar.pontuar('jogad1')
+        self.placar.pontuar('jogad2')
+        self.assertEquals(self.placar.getplacar(),"30x15")           
     
 if __name__ == '__main__':
     unittest.main()
