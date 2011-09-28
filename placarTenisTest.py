@@ -43,7 +43,7 @@ class PlacarTenisTest(unittest.TestCase):
         self.placar.pontuar('jogad2')
         self.placar.pontuar('jogad2')
         self.placar.pontuar('jogad1')
-        self.assertEquals(self.placar.getplacar(),"vantagem do jogador1")
+        self.assertEquals(self.placar.getplacar(),"vantagem do jogad1")
     
 if __name__ == '__main__':
     unittest.main()

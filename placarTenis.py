@@ -10,6 +10,7 @@ class Placar:
         self.pontos = {self.jogador1:0, self.jogador2:0}
         
     def getplacar(self):
+        if 
         return str(self.pontos[self.jogador1]) + 'x' + str(self.pontos[self.jogador2])
         
     def pontuar(self,jogador):
@@ -19,7 +20,8 @@ class Placar:
             self.pontos[jogador] = 30
         elif self.pontos[jogador] == 30:
             self.pontos[jogador] = 40
-            
+        elif self.pontos[jogador] == 40:
+            self.pontos[jogador] = "vantagem do " + jogador            
         
     
        
