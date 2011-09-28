@@ -23,7 +23,27 @@ class PlacarTenisTest(unittest.TestCase):
         self.placar.pontuar('jogad1')
         self.placar.pontuar('jogad1')
         self.placar.pontuar('jogad2')
-        self.assertEquals(self.placar.getplacar(),"30x15")           
+        self.assertEquals(self.placar.getplacar(),"30x15")    
+        
+    def teste40X30(self):
+        self.setUp()
+        self.placar.pontuar('jogad1')
+        self.placar.pontuar('jogad1')
+        self.placar.pontuar('jogad2')
+        self.placar.pontuar('jogad1')
+        self.placar.pontuar('jogad2')
+        self.assertEquals(self.placar.getplacar(),"40x30")
+        
+    def testeVantagemJogador1(self):
+        self.setUp()
+        self.placar.pontuar('jogad1')
+        self.placar.pontuar('jogad1')
+        self.placar.pontuar('jogad2')
+        self.placar.pontuar('jogad1')
+        self.placar.pontuar('jogad2')
+        self.placar.pontuar('jogad2')
+        self.placar.pontuar('jogad1')
+        self.assertEquals(self.placar.getplacar(),"vantagem do jogador1")
     
 if __name__ == '__main__':
     unittest.main()

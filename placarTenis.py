@@ -17,6 +17,8 @@ class Placar:
             self.pontos[jogador] = 15
         elif self.pontos[jogador] == 15:
             self.pontos[jogador] = 30
+        elif self.pontos[jogador] == 30:
+            self.pontos[jogador] = 40
             
         
     
