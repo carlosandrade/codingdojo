@@ -35,8 +35,8 @@ end
 
   function soma_tabela(t)
     valor = 0
-    for n = 1, #num1separado do
-        valor = valor + t[num1separado[n]]
+    for n = 1, #t do
+        valor = valor + t[n]
     end
     return valor
   end
