@@ -31,7 +31,7 @@ function soma_romana(num1,num2)
   return soma
 end
 
-  local function soma_tabela(t)
+  function soma_tabela(t)
     valor = 0
     for n = 1, #num1separado do
         valor = valor + t[num1separado[n]]
