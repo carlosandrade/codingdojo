@@ -23,7 +23,8 @@ describe["Soma tabela"] = function()
 end
 
 describe["separaString"] = function()
-    it["XX"]
+    it["XX deve retornar {X,X}"] = function()
+    end
 
 spec:report(false)
 

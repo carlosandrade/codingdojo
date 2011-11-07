@@ -2,14 +2,7 @@ function soma_romana(num1,num2)
     
   local valores = { I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000 }
   
-  local function separa_string (s)
   
-    local  t = {}
-    for letra in string.gmatch(s, "%w") do
-    table.insert(t,letra)
-    end
-    return t
-  end
   
 
 
@@ -39,4 +32,13 @@ end
         valor = valor + t[n]
     end
     return valor
+  end
+  
+  function separa_string (s)
+     
+    local  t = {}
+    for letra in string.gmatch(s, "%w") do
+    table.insert(t,letra)
+    end
+    return t
   end
