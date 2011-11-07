@@ -1,1 +1,1 @@
-clear; lua specs/boliche_spec.lua
+clear; lua specs/calculadora_spec.lua
