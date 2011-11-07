@@ -11,6 +11,12 @@ function soma_romana(num1,num2)
     return t
   end
 
+    local num1separado = separa_string (num1)
+    local valornum1 = 0
+    
+    for n = 1, #num1separado do
+        valornum1 = valores[num1separado[n]]
+    end
     
   local soma = valores[num1] + valores[num2]
   
