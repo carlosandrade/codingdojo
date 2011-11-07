@@ -24,8 +24,10 @@ end
 
 describe["separaString"] = function()
     it["XX deve retornar {X,X}"] = function()
-        local res = {"X","X"}
-        expect(separa_string("XX")).should_be(res)
+        local res1 = {"X","X"}
+        local res2 = separa_string("XX")
+        expect(res1[1]).should_be(res2[1])
+        expect(res1[2]).should_be(res2[2])
     end
 end
 
