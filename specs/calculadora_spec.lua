@@ -16,6 +16,9 @@ describe["Calculadora Romana"] = function()
   end
 end
 
+describe["Soma tabela"] = function()
+    
+
 spec:report(false)
 
 

@@ -10,13 +10,13 @@ function soma_romana(num1,num2)
     end
     return t
   end
+  
+
 
     local num1separado = separa_string (num1)
     local valornum1 = 0
     
-    for n = 1, #num1separado do
-        valornum1 = valores[num1separado[n]]
-    end
+    
     
         local num2separado = separa_string (num2)
     local valornum2 = 0
@@ -25,8 +25,16 @@ function soma_romana(num1,num2)
         valornum2 = valores[num2separado[n]]
     end
     
-  local soma = valornum1
-  
+  local soma = valornum1 + valornum2
+      
   
   return soma
 end
+
+  function soma_tabela(t)
+    valor = 0
+    for n = 1, #num1separado do
+        valor = valor + t[num1separado[n]]
+    end
+    return valor
+  end
