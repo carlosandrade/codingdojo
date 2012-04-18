@@ -26,5 +26,11 @@ public  void test4() {
 	FizzBuzzPlazz f = new FizzBuzzPlazz();
 	assertEquals(f.compare(4), "1, 2,Fizz,4"); 
 }
-	
+
+@Test
+public  void test5() {
+	FizzBuzzPlazz f = new FizzBuzzPlazz();
+	assertEquals(f.compare(4), "1, 2,Fizz,4"); 
+}
+
 }

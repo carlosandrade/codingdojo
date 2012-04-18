@@ -7,18 +7,19 @@ public class FizzBuzzPlazz {
 		
 		for (int i=1;i<=var;i++)
 		{
-			String j = String.valueOf(i);			
-			if(var==1){
+			String j = String.valueOf(i);
+			if(i==1){
 				ret = j;
 				return j;
 			}
 			else{
 				if(i==2)
 				{
-					 ret="1";
+					j = ret;
+					// ret="1";
 					 ret = ret +", "+ j ;				
 				}
-				if(i==3)
+				if(i % 3 == 0)
 				{				
 					 ret = ret +","+ "Fizz" ;				
 				}
