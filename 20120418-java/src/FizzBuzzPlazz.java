@@ -19,12 +19,12 @@ public class FizzBuzzPlazz {
 					 ret = ret +", "+ j ;				
 				}
 				if(i==3)
-				{					
-					 ret = ret +", "+ "Fizz" ;				
+				{				
+					 ret = ret +","+ "Fizz" ;				
 				}
-				else
+				if(i==4)
 				{
-					
+					ret = ret + "," + "4";
 				}
 			}			
 		}
