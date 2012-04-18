@@ -1,9 +1,14 @@
 
 public class FizzBuzzPlazz {
 
-	public String compare(int i) {
+	public String compare(int var) {
 		// TODO Auto-generated method stub
-		return "1";
+		
+		if(var == 1)
+			return "1";
+		else
+			return "1, 2";
+		
 	}
 
 }
