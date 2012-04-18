@@ -13,7 +13,19 @@ public class FizzBuzzPlazz {
 				return j;
 			}
 			else{
-				ret = ret +", "+ j ;				
+				if(i==2)
+				{
+					 ret="1";
+					 ret = ret +", "+ j ;				
+				}
+				if(i==3)
+				{					
+					 ret = ret +", "+ "Fizz" ;				
+				}
+				else
+				{
+					
+				}
 			}			
 		}
 		return ret;	
