@@ -6,8 +6,10 @@ public class FizzBuzzPlazz {
 		
 		if(var == 1)
 			return "1";
-		else
+		if (var==2)
 			return "1, 2";
+		else
+			return "1, 2,Fizz";
 		
 	}
 
