@@ -10,6 +10,8 @@ public class FizzBuzzPlazz {
 			String j = String.valueOf(i);
 			if (i==3)
 				j="Fizz";
+			if(i==5)
+				j="Buzz";
 			if(i==1){
 				ret = j;
 			}

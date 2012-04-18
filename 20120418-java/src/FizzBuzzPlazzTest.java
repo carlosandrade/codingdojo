@@ -30,7 +30,12 @@ public  void test4() {
 @Test
 public  void test5() {
 	FizzBuzzPlazz f = new FizzBuzzPlazz();
-	assertEquals(f.compare(4), "1,2,Fizz,4"); 
+	assertEquals(f.compare(5), "1,2,Fizz,4,Buzz"); 
 }
 
+@Test
+public  void test6() {
+	FizzBuzzPlazz f = new FizzBuzzPlazz();
+	assertEquals(f.compare(6), "1,2,Fizz,4,Buzz,Fizz"); 
+}
 }
