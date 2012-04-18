@@ -7,15 +7,16 @@ public class FizzBuzzPlazz {
 		
 		for (int i=1;i<=var;i++)
 		{
-			String j = String.valueOf(i);
+			String j = String.valueOf(i);			
 			if(var==1){
+				ret = j;
 				return j;
 			}
-			ret = ret +","+ j ;
+			else{
+				ret = ret +", "+ j ;				
+			}			
 		}
-		
-		return ret;
-		
+		return ret;	
 	}
 
 }
