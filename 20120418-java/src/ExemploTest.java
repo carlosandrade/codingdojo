@@ -7,4 +7,5 @@ public class ExemploTest {
 	public void funciona(){
 		assertEquals("0", "0");
 	}
+	
 }
