@@ -5,6 +5,6 @@ public class ExemploTest {
 
 	@Test
 	public void funciona(){
-		assertEquals("0", 0);
+		assertEquals("0", "0");
 	}
 }
