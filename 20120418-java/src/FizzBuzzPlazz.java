@@ -3,13 +3,18 @@ public class FizzBuzzPlazz {
 
 	public String compare(int var) {
 		// TODO Auto-generated method stub
+		String ret = new String();
 		
-		if(var == 1)
-			return "1";
-		if (var==2)
-			return "1, 2";
-		else
-			return "1, 2,Fizz";
+		for (int i=1;i<=var;i++)
+		{
+			String j = String.valueOf(i);
+			if(var==1){
+				return j;
+			}
+			ret = ret +","+ j ;
+		}
+		
+		return ret;
 		
 	}
 
