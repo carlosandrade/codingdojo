@@ -38,4 +38,20 @@ public  void test6() {
 	FizzBuzzPlazz f = new FizzBuzzPlazz();
 	assertEquals(f.compare(6), "1,2,Fizz,4,Buzz,Fizz"); 
 }
+
+@Test
+public  void test7() {
+	FizzBuzzPlazz f = new FizzBuzzPlazz();
+	assertEquals(f.compare(7), "1,2,Fizz,4,Buzz,Fizz,Plazz"); 
+}
+@Test
+public  void test10() {
+	FizzBuzzPlazz f = new FizzBuzzPlazz();
+	assertEquals(f.compare(10), "1,2,Fizz,4,Buzz,Fizz,Plazz,8,Fizz,Buzz"); 
+}
+@Test
+public  void test14() {
+	FizzBuzzPlazz f = new FizzBuzzPlazz();
+	assertEquals(f.compare(14), "1,2,Fizz,4,Buzz,Fizz,Plazz,8,Fizz,Buzz,11,Fizz,13,Plazz"); 
+}
 }
