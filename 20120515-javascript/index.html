@@ -5,8 +5,23 @@
 		<script>
 			var senha = new Array();
 			var jogada = [3,4,5,6];
-			var branco;
-			var preto;
+			var branco=0;
+			var preto=0;
+			
+			function testaJogada(jogada){
+				var resposta = new Array();
+				for(j=0; j<jogada.length;){
+					for(i=0; i<senha.length;i++){
+					 if((jogada[j]==senha[i]){
+						 if(j==i){
+							preto++;
+						 }else{
+							branco++;
+						 }
+					}
+				 }
+				}
+			}
 			
 			for (i = 1; i<=4; i++){
 				senha.push(Math.floor(Math.random()*6 + 1));
@@ -15,13 +30,8 @@
 				console.log(senha[i]);
 			}
 			
-			for(j=0; j<jogada.length;){
-				for(i=0; i<senha.length;i++){
-				 if((jogada[j]==senha[i]){
-					
-				}
-			 }
-		  }
+			
+		  
 			
 		</script>
 	</body>
