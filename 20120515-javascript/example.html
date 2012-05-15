@@ -17,7 +17,9 @@
 		<script>
 		$(function(){
 			$("td[col]").droppable();
-			$("img").draggable();
+			$("img").draggable().drag(function(){
+				console.log($(this).clone());
+			});
 		});
 		</script>
 	</head>
