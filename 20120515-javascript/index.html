@@ -5,14 +5,15 @@
 		<script>
 			var senha = new Array();
 			var jogada = [3,4,5,6];
-			var branco=0;
-			var preto=0;
 			
-			function testaJogada(jogada){
-				var resposta = new Array();
-				for(j=0; j<jogada.length;){
-					for(i=0; i<senha.length;i++){
-					 if((jogada[j]==senha[i]){
+			
+			function testar(pSenha, pJogada){
+				
+				var branco=0;
+				var preto=0;
+				for(j=0; j<pJogada.length;){
+					for(i=0; i<pSenha.length;i++){
+					 if((pJogada[j]==pSenha[i]){
 						 if(j==i){
 							preto++;
 						 }else{
@@ -21,6 +22,8 @@
 					}
 				 }
 				}
+				var vazio = 4 - preto - branco;
+				console.log(preto + ' ' + branco + ' ' + vazio);
 			}
 			
 			for (i = 1; i<=4; i++){
