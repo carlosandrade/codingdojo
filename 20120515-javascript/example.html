@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<style>
+			td{
+				width: 50px;
+				height: 50px;
+			}
+			.preto {
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+		</style>
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/jqueryui.js"></script>		
+		
+		<script>
+		$(function(){
+			$("td[col]").droppable();
+			$("img").draggable().drag(function(){
+				console.log($(this).clone());
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<table id="jogadas" border="1" cellspacing="0" cellpadding="0" style="float:left; margin-right: 10px;">
+			<tr>
+				<td row="1" col="1"></td>
+				<td row="1" col="2"></td>
+				<td row="1" col="3"></td>
+				<td row="1" col="4"></td>
+			</tr>
+			<tr>
+				<td row="2" col="1"></td>
+				<td row="2" col="2"></td>
+				<td row="2" col="3"></td>
+				<td row="2" col="4"></td>
+			</tr>
+			<tr>
+				<td row="3" col="1"></td>
+				<td row="3" col="2"></td>
+				<td row="3" col="3"></td>
+				<td row="3" col="4"></td>
+			</tr>
+			<tr>
+				<td row="4" col="1"></td>
+				<td row="4" col="2"></td>
+				<td row="4" col="3"></td>
+				<td row="4" col="4"></td>
+			</tr>
+			<tr>
+				<td row="5" col="1"></td>
+				<td row="5" col="2"></td>
+				<td row="5" col="3"></td>
+				<td row="5" col="4"></td>
+			</tr>
+			<tr>
+				<td row="6" col="1"></td>
+				<td row="6" col="2"></td>
+				<td row="6" col="3"></td>
+				<td row="6" col="4"></td>
+			</tr>			
+			<tr>
+				<td row="7" col="1"></td>
+				<td row="7" col="2"></td>
+				<td row="7" col="3"></td>
+				<td row="7" col="4"></td>
+			</tr>
+			<tr>
+				<td row="8" col="1"></td>
+				<td row="8" col="2"></td>
+				<td row="8" col="3"></td>
+				<td row="8" col="4"></td>
+			</tr>			
+			<tr>
+				<td row="9" col="1"></td>
+				<td row="9" col="2"></td>
+				<td row="9" col="3"></td>
+				<td row="9" col="4"></td>
+			</tr>
+			<tr>
+				<td row="10" col="1"></td>
+				<td row="10" col="2"></td>
+				<td row="10" col="3"></td>
+				<td row="10" col="4"></td>
+			</tr>									
+		</table>
+
+		<table id="score" border="1" cellspacing="0" cellpadding="0">
+			<tr>
+				<td row="1" class="branco"></td>
+				<td row="1" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="2" class="branco"></td>
+				<td row="2" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="3" class="branco"></td>
+				<td row="3" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="4" class="branco"></td>
+				<td row="4" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="5" class="branco"></td>
+				<td row="5" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="6" class="branco"></td>
+				<td row="6" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="7" class="branco"></td>
+				<td row="7" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="8" class="branco"></td>
+				<td row="8" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="9" class="branco"></td>
+				<td row="9" class="preto"></td>				
+			</tr>
+			<tr>
+				<td row="10" class="branco"></td>
+				<td row="10" class="preto"></td>				
+			</tr>
+		</table>
+		<br/>
+		Cores (arraste as cores até a casa desejada)
+		<table id="cores" border="1" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><img src="img/amarelo.png"></td>
+				<td><img src="img/azul.png"></td>
+				<td><img src="img/laranja.png"></td>
+				<td><img src="img/rosa.png"></td>
+				<td><img src="img/verde.png"></td>
+				<td><img src="img/vermelho.png"></td>																				
+			</tr>
+		</table>
+
+
+	</body>
+</html>
